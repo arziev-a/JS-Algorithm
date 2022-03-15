@@ -23,3 +23,23 @@ function countUnique (arr) {
 }
 
 console.log(countUnique(ex)) // Logs 7
+
+
+
+
+
+//  With the for loop 
+
+
+function countUniqueWithForLoop (array) {
+    let cur = arr[0]
+    let count2  = 1
+
+    for (let i = 1; i < array.length; i ++) {
+        if (arr[i] !== cur) {
+            cur = arr[i]
+            count2 ++
+        }
+    }
+    return count2
+}
