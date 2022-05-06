@@ -1,5 +1,13 @@
+/* Problem desc:
+  Given sorted array of integers and target average. 
+  Determine if there is a pair of values in the array where 
+  the average is equal to a target average. 
+  Ex:
+  avgPair([1, 2, 3], 2.5) //true
+
+*/
+
 function avgPair(arr, target) {
-  //return true or false
   let left = 0;
   let right = arr.length - 1;
 
