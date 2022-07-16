@@ -1,8 +1,8 @@
 const m = [
-  [1, 1, 1, 0],
-  [0, 0, 0, 0],
-  [1, 0, 1, 0],
-  [1, 1, 1, 1],
+  [1, 1, 1, 0, 1, 0, 0, 1],
+  [1, 0, 0, 0, 0, 1, 0, 0],
+  [1, 0, 1, 0, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 0, 1, 1],
 ];
 
 function mazeSolver(matrix) {
@@ -10,7 +10,7 @@ function mazeSolver(matrix) {
   let found = false;
   for (let i = 0; i < matrix.length; i++) {
     let row = [];
-    for (let j = 0; j < matrix[0].length; j++) {
+    for (let j = 0; j < matrix[i].length; j++) {
       row.push(0);
     }
     visited.push(row);
